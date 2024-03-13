@@ -7,7 +7,7 @@
 -   Click on "Set canvas extent" , set the output path and click on
     > download.
 
-![](.\Screenshots\srtm-downloader.png)
+![](./Screenshots/srtm-downloader.png)
 
 > \> Pop up window for login will appear to start download. Login using
 > Earthdata
@@ -36,7 +36,7 @@ output directory on qgis and build a virtual raster.
 
 -   Untick the "Place each input file into separate band" and run
 
-![](.\Screenshots\Build_Virtual_Raster.png)
+![](./Screenshots/Build_Virtual_Raster.png)
 
 **Step-4**: Clip the virtual raster using your shapefile as mask layer
 and set the source and target crs=4326.
@@ -51,7 +51,7 @@ and set the source and target crs=4326.
 
 -   Target CRS: select "EPSG:4326"
 
-![](.\Screenshots\Clip_raster_by_Mask_Layer.png)
+![](./Screenshots/Clip_raster_by_Mask_Layer.png)
 
 **Step-5**: Extract drainage lines by using "r.stream.extract" in QGIS,
 set the flow accumulation threshold to 100 and geometry to line. Output
@@ -63,13 +63,13 @@ only the vector shapefile.
 
 -   Min flow accumulation for streams: 100
 
-![](.\Screenshots\r_stream_extract_1.png)
+![](./Screenshots/r_stream_extract_1.png)
 
 -   Advanced parameters \> output type : select "line"
 
 -   Only Click Output "unique stream ids (vect)" and run.
 
-![](.\Screenshots\r_stream_extract_2.png)
+![](./Screenshots/r_stream_extract_2.png)
 
 **Step-6**: Run the "Check validity" on QGIS to remove the improper
 geometry in drainage lines.
@@ -82,7 +82,7 @@ geometry in drainage lines.
 
 -   Only click on "valid output"
 
-![](.\Screenshots\Check_validity.png)
+![](./Screenshots/Check_validity.png)
 
 -   Export the valid output as shapefiles.
 
